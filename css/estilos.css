@@ -1,0 +1,137 @@
+
+
+@keyframes desaparecer {
+
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+
+}
+
+
+
+body{
+    margin: 0;
+    padding: 0;
+    }
+.custom-col{
+    height: 70px;
+}
+header{
+
+    width: 100%;    
+
+}
+#contenedorDeImagenes {
+    position: relative;
+    width: 100%;
+}
+#cambiaImagen {
+
+    width:100%;
+    height:500px;
+}
+.row {
+    width: 100%;
+    text-align: center;
+    background-color: green;
+}
+
+#contenedoresDeBotones {
+    position: absolute;
+    display: flex;    
+    width: 100%;
+    justify-content: space-between;
+    height: 30px;
+    align-items: center;
+    border: solid 4px blue;
+}
+#botonAnterior {
+    border: solid 2px black;
+    width: 30px;
+    height: 30px;
+}
+#botonSiguiente {
+    border: solid 2px black;
+    width: 30px;
+    height: 30px;
+}
+button {
+
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+.page { 
+    
+    display:none;
+}
+#pageContainer {
+    border: solid 4px green;
+}
+#productos {
+
+
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+.productImg {
+    width: 250px;
+    height: 160px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+#nuestrosProductos {
+
+    text-align: center ;
+
+}
+
+#barraNavegacion {
+    
+    height: 90px;
+    width: 100%;
+    display: flex;
+}
+
+
+#logoMiniatura {
+    
+    border: solid 5px green;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: flex-start;
+
+}
+#botonRegistro {
+
+
+}
+button {
+    
+    width: 80px;
+    height: 40px; 
+    display: flex;
+}
+#barraNavegacion {
+    display: flex;
+    justify-content: flex-end;
+}
+#botonesImg {
+
+    display: flex;
+    justify-content: space-between;
+
+}
+.esfumarse {
+
+    animation: desaparecer 2s forwards;
+
+}
