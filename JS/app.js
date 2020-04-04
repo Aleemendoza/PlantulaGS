@@ -46,3 +46,26 @@ cambiaImagen.addEventListener("mouseleave", function(){
 })
 
 
+var botonCuenta = document.getElementById("dropdownMenuButton");
+var login = document.getElementById("login");
+var form = document.getElementById("formLogin")
+var menuAbierto = false;
+botonCuenta.addEventListener('click', function (){
+    
+    if (menuAbierto == false){
+
+        login.style.display="block";
+        form.style.display="block"
+        menuAbierto = true;
+        console.log("false")
+    }
+    else {
+        
+    console.log(true)
+    login.style.display="none"
+    form.style.display="none"
+    menuAbierto = false;
+    }
+
+
+})  

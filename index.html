@@ -6,23 +6,53 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/estilos.css">
-    <title>PLANTULA! -GROW SHOP- </title>
+    <link rel="shortcut icon" href="images/imagesLogo/logoFavicon.ico">
+    <link rel="icon" type="image/gif" href="animated_favicon1.gif">
+    <title>PLANTULA</title>
 </head>
 
 <body>
     <header>
         <nav id="barraNavegacion">
+            <div id="informacion">
+                <div class="btn-group">
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            mi cuenta
+                        </button>
+                        <div id="login" class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+
+                            <div id="formLogin" class="dropdown-menu">
+                                <form class="px-4 py-3">
+                                  <div class="form-group">
+                                    <label for="exampleDropdownFormEmail1">Email address</label>
+                                    <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="exampleDropdownFormPassword1">Password</label>
+                                    <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
+                                  </div>
+                                  <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                                    <label class="form-check-label" for="dropdownCheck">
+                                      Remember me
+                                    </label>
+                                  </div>
+                                  <button type="submit" class="btn btn-primary">Sign in</button>
+                                </form>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">New around here? Sign up</a>
+                                <a class="dropdown-item" href="#">Forgot password?</a>
+                              </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div id="contenedorLogo">
 
-                <img id="logoMiniatura" src="images/logoPlantula.jpg" alt="">
-
-            </div>
-
-            <div id="botonesRegistro">
-
-                <button>
-                    <a href="registro.html"> Registrate! </a>
-                </button>
+                <img id="logoMiniatura" src="images/imagesLogo/logoSinFondo.png" alt="">
 
             </div>
             <div id="botonIniciarSesion">
@@ -33,22 +63,7 @@
 
         </nav>
 
-        <div id="contenedorDeImagenes">
-
-            <img id="cambiaImagen" src="images/logoPlantula.jpg" alt="aqui va el logo">
-            
-        <div id="contenedoresDeBotones" >
-                <button id="botonAnterior"> 
-                    < 
-                </button> 
-                <button id="botonSiguiente"> 
-                        > 
-                </button>
-
-            </div>
-        </div>
     </header>
-
     <div class="menu container-fluid">
         <div class="row">
             <div class="custom-col col-md-3 button">inicio</div>
@@ -57,6 +72,19 @@
             <div class="custom-col col-md-3 button">Nuestros Productos</div>
         </div>
     </div>
+    <div id="contenedorDeImagenes">
+
+        <img id="cambiaImagen" src="images/logoPlantula.jpg" alt="aqui va el logo">
+
+        <div id="contenedoresDeBotones">
+            <button id="botonAnterior">
+                < </button> <button id="botonSiguiente">
+                    >
+            </button>
+
+        </div>
+    </div>
+
 
     <div id="pageContainer">
         <div class="page" id="inicio">
@@ -80,10 +108,6 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi quidem laborum eius. Sed eum earum
                         quibusdam soluta quae veritatis iste! Labore, in nam aperiam maxime est ex vitae ad deleniti!
                     </p>
-                    <div id=" ">
-                        <div id="botonAnterior"><a onclick="anterior()">anterior</a></div>
-                        <div id="botonSiguiente"><a onclick="siguiente()"> siguiente </a></div>
-                    </div>
                 </div>
                 </br>
                 </br>
@@ -202,6 +226,7 @@
 
 
     </footer>
+  
     <script src="JS/app.js"></script>
     <script src="JS/menu.js"></script>
 </body>
