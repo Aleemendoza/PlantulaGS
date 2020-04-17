@@ -1,3 +1,49 @@
+@font-face {
+
+	font-family: dancing_script;
+	src: url(fonts/Dancing_Script/DancingScript.ttf);
+
+
+}
+* {
+
+	margin: 0;
+	bottom: 0;
+
+}
+body {
+
+	display: flex;
+	justify-content: center;
+
+}
+
+
 .hidden {
 	display: none;
+}
+#formularioCompleto {
+
+	width: 600px;
+	height: 100%;
+	border-radius: 20px; 
+	box-shadow: 15px 15px 20px gray;
+
+}
+#imagenForm {
+	
+	background-color: black;
+	width: 100%;
+	height: 155px;
+	border: solid  3px black;
+	display: flex;
+	justify-content: center;
+
+}
+img {
+
+	height: 140px;
+	width: 200px;
+
+
 }
