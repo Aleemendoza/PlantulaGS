@@ -32,7 +32,7 @@ var intervalo = setInterval(siguiente, 3000);
 cambiaImagen.addEventListener("mouseenter", function(){
 
    clearInterval(intervalo);
-   console.log(cambiaImagen)
+   
    
 });
 
@@ -54,6 +54,7 @@ botonCuenta.addEventListener('click', function (){
     
     if (menuAbierto == false){
 
+        form.style.background="green"
         login.style.display="block";
         form.style.display="block"
         menuAbierto = true;
@@ -61,10 +62,11 @@ botonCuenta.addEventListener('click', function (){
     }
     else {
         
-    console.log(true)
-    login.style.display="none"
-    form.style.display="none"
-    menuAbierto = false;
+        console.log(true)
+        login.style.display="none"
+        form.style.display="none"
+        menuAbierto = false;
+
     }
 
 
